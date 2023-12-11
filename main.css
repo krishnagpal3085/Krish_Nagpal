@@ -1,0 +1,502 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+    letter-spacing: 0.002rem;
+  
+
+}
+
+::-webkit-scrollbar{
+    width:0.5vh;
+}
+::-webkit-scrollbar-track{
+    background:black;
+    margin-block:20px;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to top,  rgb(0, 255, 51) , rgba(0, 0, 0,0)); 
+    border-radius:30px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color:  black;
+    overflow-x: hidden;
+    cursor: none;
+    width: 100%;
+}
+#cursor{
+    background-color:  rgb(0, 255, 51);
+    height:15px;
+    width:15px;
+    border-radius: 100px;
+    position:fixed;
+    filter:blur(2px);
+    z-index: -1;
+}
+#cursor-1{
+    background-color:rgb(0, 255, 51);
+    height:40vh;
+    width:40vh;
+    opacity: 20%;
+    position: fixed;
+    position: fixed;
+    filter:blur(80px);
+    border-radius:50%;
+    z-index: -2;
+}
+
+
+#herosection{
+    margin-top:3%;
+    text-align: center;
+    height:70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: flex-start;
+    opacity: 0;
+}
+#mainheding{
+    color: rgb(137, 137, 137);
+    font-size:11vw;
+    margin-top:5vh;
+}
+#name{
+    color:rgb(0, 0, 0);
+    text-shadow: -2px -2px 2px  rgb(0, 255, 51), 2px -2px 2px  rgb(0, 255, 51), -2px 2px 2px  rgb(0, 255, 51), 2px 2px 2px  rgb(0, 255, 51);
+
+}
+
+#mainanimation{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left:2%;
+}
+#intro{
+    color: rgb(137, 137, 137);
+    font-size: 7vw;
+    margin-top:8vh;
+    display: inline-block;
+    margin-left:15px;
+
+}
+#typingmain{
+    display:flex;
+    flex-direction: column;    
+}
+#typingmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+overflow-y: hidden;
+   overflow-x: hidden;
+   
+
+}
+.typing{
+    font-size:6vw;
+color: rgb(0, 231, 46);
+}
+#navbar{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 0.7vh;
+    height:3.5vw;
+    padding:1%;
+    z-index: 10;
+    justify-content: flex-start;
+    align-items: flex-start;
+    opacity: 0;
+
+
+}
+
+#navname{
+    font-size:2.5vw;
+    z-index: 11;
+    padding: 0;
+    top: 10px;
+    position: absolute;
+}
+#navbtnc{
+    display:flex;
+    justify-content:flex-end ;
+    align-items: flex-end;
+    margin:auto;
+    margin-bottom:5%;
+}
+.navbtn{
+    padding:2%;
+    color: rgb(0, 255, 51);
+    margin-bottom: 10px;
+    transition: opacity 0.5s , -webkit-text-stroke 0.5s,color 1s;
+    position: relative;
+    font-weight: bolder;
+    font-size:1.5vw;
+    margin-left:2vw;
+}
+.navbtn:hover{
+    opacity: 50%;
+    -webkit-text-stroke: 1px  rgb(0, 255, 51) ;
+    color:black;
+    
+}
+#main{
+    height: 350vh;
+}
+#sec1{
+    color: #898989;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top:10vh;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+#title1{
+  font-size:5.2vw;
+  margin: auto;
+}
+#aboutme{
+    font-size:1.7vw;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    width:60%;
+    left: 10px;
+}
+#bitmoji{
+    
+    margin-top:27vh;
+    position: absolute;
+    right:0.5vw;
+    height:50%;
+    width:35%;
+}
+
+
+.ap1{
+    color:rgb(0, 255, 51);
+    
+}
+#sec2{
+
+    color: #898989 ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:125vh;
+    margin-top:8vh;
+
+}
+#title2{
+    display: block;
+    font-size:5.2vw;
+    margin-top:5vh;
+
+}
+#video{
+    min-width:100vw;
+    height:auto;
+    margin-top:5vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#video1{
+    height:60%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    z-index: -1;
+}
+.video{
+    border:0.17vw solid rgb(0, 255, 51);
+    height:35vw;
+    width:55vw;
+    border-radius:200px;
+   margin: auto;
+}
+.video h1 {
+    margin:3%;
+    font-size:2.5vw;
+}
+.video p {
+    margin:auto;
+    font-size:1.5vw;
+    position: relative;
+    margin-top:1.5%;
+    transition: all 1s;
+}
+.video p:hover span{
+    color:rgb(0, 255, 51) ;
+}
+#sec2 h4{
+    position: relative;
+    font-weight: bolder;
+    transition: all 0.4s;
+    font-size:1.7vw;
+    margin-top:4%;
+}
+#sec2 h4:hover span{
+    color:rgb(0, 255, 51) ;
+}
+#banner{
+   
+        height:20vh;
+        width:10000%;
+        display: flex;
+        overflow-x: hidden; 
+        overflow-y: hidden;
+      
+}
+.scr{
+    font-size:3vw;
+    animation: slide 30s  linear infinite;
+    display: flex ;
+    height:15vw;
+    width:max-content;
+    padding: 0;
+    position: relative;
+    flex-wrap:wrap;   
+
+}
+.scr h1{
+    margin:3vh;
+    margin-left:4vw;
+    -webkit-text-stroke:0.2vw  #848484 ;
+    color: black;
+    transition: color 1.5s  ,-webkit-text-stroke 0.5s;
+    cursor:none;
+}
+.scr h1:hover{
+      color:#00ff33 ;
+      -webkit-text-stroke: 1px rgb(0, 255, 51) ;
+}
+@keyframes slide {
+     0%{
+        transform: translateX(0);
+     }
+     100%{
+        transform: translateX(-100%);
+     }
+}
+#sec3{
+    color: #848484;
+    z-index: 9;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items:center ;
+    flex-wrap: wrap;
+   margin-top: 0;
+    width: 100%;
+    margin-top:-10vh;
+    height: 95vh;
+    gap:5%;
+
+}
+#sendmessage{
+    display: flex;
+    flex-direction: column;
+    font-size:2vw;
+    align-items: center;
+    height:60vh;
+    margin-top: 5vw;
+ 
+}
+.inputbox{
+    height:8vh;
+    width:27vw;
+    text-align: center;
+    margin:2.5%;
+    border:0.17vw solid #00ff33;
+    background-color: black;
+    color: #00ff33;
+    border-radius: 20px;
+    font-size:1.5vw;
+    position: relative;
+}
+.inputbox ::placeholder{
+    position: absolute;
+}
+.me{
+    height:15vh;
+}
+#submit{
+    height:8vh;
+    width:6.5vw;
+    color:#00ff33 ;
+    font-size:1.5vw;
+    background-color: black;
+    border:0.20vw solid #848484;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#submit:hover{
+    border:0.20vw solid #00ff33;
+    color: #5e5e5e;
+
+}
+#info{
+
+    height:90vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5vw;
+}
+#info h1{
+    font-size:4vw;
+}
+#logos{
+    display: flex;
+    margin-top:2vw;
+}
+.logo{
+    height:3vw ;
+    width:3vw;
+    margin:2.5vw;
+}
+.contact{
+    font-size:1.7vw;
+    margin:5%;
+}
+#recive{
+    color: #00ff33;
+}
+
+@media only screen and (max-width:1024px) {
+    body{
+        width: 100vw;
+    }
+    #nanvbar{
+        height:5vh;
+    }
+    #bitmoji{
+        height:30%;
+        width:20%;
+        margin-top:60vh ;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #navbar{
+        top: 0;
+        margin-top: 0.7vh;
+        height:5vw;
+    
+    }
+    #main{
+        height: 100vh;
+    }
+    
+    #navname{
+        font-size:4vw;
+        z-index: 11;
+        padding: 0;
+        top: 0;
+        position: absolute;
+    }
+    #navbtnc{
+        display:flex;
+        justify-content:flex-end ;
+        align-items: flex-end;
+        margin:auto;
+        margin-bottom:5%;
+    }
+    .navbtn{
+        padding:2%;
+        color: rgb(0, 255, 51);
+        margin-bottom: auto;
+        transition: opacity 0.5s , -webkit-text-stroke 0.5s,color 1s;
+        position: relative;
+        font-weight: bolder;
+        font-size:1.5vw;
+        margin-left:2vw;
+    }
+    
+    body{
+        width: 100vw;
+    }
+   #bitmoji{
+    display: none;
+   }
+   #aboutme{
+    font-size:2vw;
+    margin:auto;
+    left:0;
+    width:80%;
+   }
+#video1{
+    height:60%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    z-index: -5;
+}
+.video{
+    height:40vw;
+    width:60vw;
+   z-index: 1;
+}
+#herosection{
+    height:50vh;
+}
+#sec1{
+    height: 30vh;
+}
+#sec2{
+    height: 50vh;
+}
+#sec3{
+    display: block;
+    height: 10vh;
+
+}
+.inputbox{
+    margin: auto;
+    height: 5vh;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.me{
+    height: 8vh;
+}
+#submit{
+    height: 3.5vh;
+    width: 10vw;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+#info{
+    height: 45vh;
+}
+
+#sendmessage{
+    height:45vh;
+}
+
+}
