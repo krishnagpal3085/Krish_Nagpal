@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar{
-    width:0.5vh;
+    width:0.5vw;
 }
 ::-webkit-scrollbar-track{
     background:black;
