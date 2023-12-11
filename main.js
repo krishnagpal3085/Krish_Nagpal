@@ -130,8 +130,8 @@ gsap.to("#title1",{
 })
 
 gsap.to("#bitmoji",{
-    height:"35vh",
-    width:"20vw",
+    height:"30%",
+    width:"20%",
     scrollTrigger:{
         trigger:"#bitmoji",
         scroll:"body",
